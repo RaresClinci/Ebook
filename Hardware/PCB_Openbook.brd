@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
@@ -109,7 +109,7 @@
 <libraries>
 <library name="DeskAssistant v19 v1" urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw">
 <packages>
-<package name="MYBUTTON" library_version="46">
+<package name="MYBUTTON" urn="urn:adsk.eagle:footprint:47662474/1" library_version="46">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 4.6 x 2.8mm&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.ck-components.com/media/1479/kmr2.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -118,16 +118,16 @@
 <wire x1="1.75" y1="-1.45" x2="1.75" y2="1.45" width="0.127" layer="51"/>
 <wire x1="-1.75" y1="1.45" x2="1.75" y2="1.45" width="0.127" layer="51"/>
 <wire x1="-1.75" y1="-1.45" x2="1.75" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-0.9" y1="-2.1" x2="-0.9" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-2.1" x2="0.9" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="-2.1" x2="0.9" y2="-2.1" width="0.127" layer="21"/>
 <smd name="3" x="-1.75" y="-0.75" dx="1.4" dy="1.05" layer="1"/>
 <smd name="4" x="1.75" y="-0.75" dx="1.4" dy="1.05" layer="1"/>
 <smd name="1" x="1.75" y="0.75" dx="1.4" dy="1.05" layer="1"/>
 <smd name="2" x="-1.75" y="0.75" dx="1.4" dy="1.05" layer="1"/>
 <text x="-1.27" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="-0.9" y1="-2.1" x2="-0.9" y2="-1.45" width="0.127" layer="21"/>
-<wire x1="0.9" y1="-2.1" x2="0.9" y2="-1.45" width="0.127" layer="21"/>
-<wire x1="-0.9" y1="-2.1" x2="0.9" y2="-2.1" width="0.127" layer="21"/>
 </package>
-<package name="ESP32_WROVER_EAGLE-LTSPICE_C0402" library_version="20">
+<package name="EAGLE-LTSPICE_C0402" urn="urn:adsk.eagle:footprint:47662476/1" library_version="1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
 <wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
@@ -143,7 +143,7 @@
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="CAPCP3225X100N" library_version="63">
+<package name="CAPCP3225X100N" urn="urn:adsk.eagle:footprint:47662471/1" library_version="63">
 <wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
 <wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
 <wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
@@ -164,7 +164,7 @@
 <smd name="2" x="1.1" y="0" dx="1.4" dy="1.4" layer="1"/>
 <smd name="1" x="-1.1" y="0" dx="1.4" dy="1.4" layer="1"/>
 </package>
-<package name="RCL_CT3528" library_version="31">
+<package name="RCL_CT3528" urn="urn:adsk.eagle:footprint:47662455/1" library_version="31">
 <description>&lt;b&gt;TANTALUM CAPACITOR&lt;/b&gt;</description>
 <wire x1="-2.973" y1="1.983" x2="2.973" y2="1.983" width="0.0508" layer="39"/>
 <wire x1="2.973" y1="-1.983" x2="-2.973" y2="-1.983" width="0.0508" layer="39"/>
@@ -184,7 +184,7 @@
 <text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="ADAFRUIT_CHIP-LED0603" library_version="30">
+<package name="ADAFRUIT_CHIP-LED0603" urn="urn:adsk.eagle:footprint:47662459/1" library_version="30">
 <description>&lt;b&gt;Hyper CHIPLED Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
 LB Q993&lt;br&gt;
 Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
@@ -200,7 +200,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="-0.635" y="-0.635" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="1.905" y="-0.635" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="SOT95P280X145-6N" library_version="9">
+<package name="SOT95P280X145-6N" urn="urn:adsk.eagle:footprint:47662463/1" library_version="9">
 <description>&lt;b&gt;SOT23-6(ESDA6V1-5SC6Y)&lt;/b&gt;&lt;br&gt;
 </description>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
@@ -226,7 +226,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <smd name="5" x="1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
 <smd name="6" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
 </package>
-<package name="DIOC1608X36N" library_version="44">
+<package name="DIOC1608X36N" urn="urn:adsk.eagle:footprint:47662465/1" library_version="44">
 <wire x1="-0.83" y1="-0.42" x2="-0.83" y2="0.42" width="0.127" layer="51"/>
 <wire x1="-0.83" y1="0.42" x2="0.83" y2="0.42" width="0.127" layer="51"/>
 <wire x1="0.83" y1="0.42" x2="0.83" y2="-0.42" width="0.127" layer="51"/>
@@ -240,7 +240,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <smd name="1" x="-0.75" y="0" dx="0.97" dy="0.94" layer="1"/>
 <smd name="2" x="0.75" y="0" dx="0.97" dy="0.94" layer="1"/>
 </package>
-<package name="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0" library_version="62">
+<package name="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0" urn="urn:adsk.eagle:footprint:47662458/1" library_version="62">
 <description>Schottky Barrier Rectifier Diode</description>
 <wire x1="-1" y1="-0.65" x2="-1" y2="0.65" width="0.15" layer="51"/>
 <wire x1="-1" y1="0.65" x2="1" y2="0.65" width="0.15" layer="51"/>
@@ -257,7 +257,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <smd name="2" x="1.05" y="0" dx="0.8" dy="0.9" layer="1"/>
 <text x="1.775" y="-0.225" size="1" layer="25">&gt;NAME</text>
 </package>
-<package name="SOD3716X135N" library_version="54">
+<package name="SOD3716X135N" urn="urn:adsk.eagle:footprint:47662467/1" library_version="54">
 <description>&lt;b&gt;SOD-123 CASE425-04 ISSUE G&lt;/b&gt;&lt;br&gt;
 </description>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
@@ -276,7 +276,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <smd name="1" x="-1.75" y="0" dx="1.15" dy="0.8" layer="1"/>
 <smd name="2" x="1.75" y="0" dx="1.15" dy="0.8" layer="1"/>
 </package>
-<package name="SOT95P280X125-5N" library_version="51">
+<package name="SOT95P280X125-5N" urn="urn:adsk.eagle:footprint:47662462/1" library_version="51">
 <description>&lt;b&gt;SSOP5&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-1.4" y="0.95" dx="0.9" dy="0.6" layer="1"/>
@@ -301,7 +301,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="-0.6" y1="-1.45" x2="-0.6" y2="1.45" width="0.2" layer="21"/>
 <wire x1="-1.85" y1="1.5" x2="-0.95" y2="1.5" width="0.2" layer="21"/>
 </package>
-<package name="SOT95P280X120-5N" library_version="46">
+<package name="SOT95P280X120-5N" urn="urn:adsk.eagle:footprint:47662466/1" library_version="46">
 <description>&lt;b&gt;SOT23-5_1&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-1.4" y="0.95" dx="0.9" dy="0.6" layer="1"/>
@@ -326,7 +326,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="-0.6" y1="-1.45" x2="-0.6" y2="1.45" width="0.2" layer="21"/>
 <wire x1="-1.85" y1="1.5" x2="-0.95" y2="1.5" width="0.2" layer="21"/>
 </package>
-<package name="FH34SRJ24S05SH99" library_version="1">
+<package name="FH34SRJ24S05SH99" urn="urn:adsk.eagle:footprint:47662479/1" library_version="25">
 <description>&lt;b&gt;FH34SRJ-24S-0.5SH(99)-4&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="5.75" y="1.45" dx="0.8" dy="0.3" layer="1" rot="R90"/>
@@ -373,7 +373,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="5.75" y1="2.4" x2="5.75" y2="2.3" width="0.1" layer="21" curve="180"/>
 <wire x1="5.75" y1="2.3" x2="5.75" y2="2.4" width="0.1" layer="21" curve="180"/>
 </package>
-<package name="SAMACSYS_PARTS_USB4110GFA" library_version="1">
+<package name="SAMACSYS_PARTS_USB4110GFA" urn="urn:adsk.eagle:footprint:47662454/1" library_version="1">
 <description>&lt;b&gt;USB4110-GF-A-1&lt;/b&gt;&lt;br&gt;</description>
 <wire x1="-4.47" y1="-3.677" x2="4.47" y2="-3.677" width="0.2" layer="51"/>
 <wire x1="4.47" y1="-3.677" x2="4.47" y2="3.673" width="0.2" layer="51"/>
@@ -419,7 +419,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <hole x="-2.89" y="2.603" drill="0.65"/>
 <hole x="2.89" y="2.603" drill="0.65"/>
 </package>
-<package name="JST04_1MM_RA" urn="urn:adsk.eagle:footprint:41390277/1" library_version="2">
+<package name="JST04_1MM_RA" urn="urn:adsk.eagle:footprint:41390277/1" library_version="25">
 <description>&lt;h3&gt;SMD- 4 Pin Right Angle &lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
@@ -443,7 +443,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="-1.397" y="-2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="112ATAARR03ATTEND" library_version="2">
+<package name="112ATAARR03ATTEND" urn="urn:adsk.eagle:footprint:47662475/1" library_version="2">
 <description>&lt;b&gt;112A-TAAR-R03 ATTEND-1&lt;/b&gt;&lt;br&gt;</description>
 <wire x1="0.07" y1="-4.5" x2="14.07" y2="-4.5" width="0.2" layer="51"/>
 <wire x1="14.07" y1="-4.5" x2="14.07" y2="10.7" width="0.2" layer="51"/>
@@ -478,7 +478,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="7.095" y="3.1" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="7.095" y="3.1" size="1.27" layer="27" align="center">&gt;VALUE</text>
 </package>
-<package name="IND_4828-WE-TPC_WRE" library_version="56">
+<package name="IND_4828-WE-TPC_WRE" urn="urn:adsk.eagle:footprint:47662469/1" library_version="56">
 <smd name="1" x="-2.286" y="0" dx="0.889" dy="4.826" layer="1"/>
 <smd name="2" x="2.286" y="0" dx="0.889" dy="4.826" layer="1" rot="R180"/>
 <polygon width="0.0254" layer="1" pour="solid">
@@ -664,6 +664,13 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="-0.4927" y1="4.9529" x2="-0.7467" y2="4.8259" width="0.1524" layer="47"/>
 <wire x1="-0.4927" y1="4.6989" x2="-0.7467" y2="4.8259" width="0.1524" layer="47"/>
 <wire x1="-0.4927" y1="4.6989" x2="-0.4927" y2="4.9529" width="0.1524" layer="47"/>
+<wire x1="-0.414" y1="-2.6289" x2="0.414" y2="-2.6289" width="0.1524" layer="21"/>
+<wire x1="0.414" y1="2.6289" x2="-0.414" y2="2.6289" width="0.1524" layer="21"/>
+<wire x1="-2.5019" y1="-2.5019" x2="2.5019" y2="-2.5019" width="0.1524" layer="51"/>
+<wire x1="2.5019" y1="-2.5019" x2="2.5019" y2="2.5019" width="0.1524" layer="51"/>
+<wire x1="2.5019" y1="2.5019" x2="-2.5019" y2="2.5019" width="0.1524" layer="51"/>
+<wire x1="-2.5019" y1="2.5019" x2="-2.5019" y2="-2.5019" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="2.5019" x2="-0.3048" y2="2.5019" width="0.1524" layer="51" curve="-180"/>
 <text x="-15" y="-10.1219" size="1.27" layer="47" ratio="6">Pin 1 Padstyle: RX79Y209D0T</text>
 <text x="-17.5085" y="-11.6459" size="1.27" layer="47" ratio="6">Default Padstyle: RX79Y209D0TSM2</text>
 <text x="-16.1525" y="-13.1699" size="1.27" layer="47" ratio="6">Heat Tab Padstyle: RX90Y90D0T</text>
@@ -676,17 +683,10 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="-5.7924" y="-4.6149" size="0.635" layer="47" ratio="4">0.079in/2.007mm</text>
 <text x="-16.3962" y="-0.3175" size="0.635" layer="47" ratio="4">0.209in/5.309mm</text>
 <text x="-4.0424" y="5.3339" size="0.635" layer="47" ratio="4">0.059in/1.493mm</text>
-<wire x1="-0.414" y1="-2.6289" x2="0.414" y2="-2.6289" width="0.1524" layer="21"/>
-<wire x1="0.414" y1="2.6289" x2="-0.414" y2="2.6289" width="0.1524" layer="21"/>
-<wire x1="-2.5019" y1="-2.5019" x2="2.5019" y2="-2.5019" width="0.1524" layer="51"/>
-<wire x1="2.5019" y1="-2.5019" x2="2.5019" y2="2.5019" width="0.1524" layer="51"/>
-<wire x1="2.5019" y1="2.5019" x2="-2.5019" y2="2.5019" width="0.1524" layer="51"/>
-<wire x1="-2.5019" y1="2.5019" x2="-2.5019" y2="-2.5019" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.5019" x2="-0.3048" y2="2.5019" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.2712" y="-0.635" size="1.27" layer="27" ratio="6">&gt;Name</text>
 <text x="-1.7288" y="-0.635" size="1.27" layer="27" ratio="6">&gt;Value</text>
 </package>
-<package name="ESP32_WROVER_SPARKFUN-IC-POWER_SOT23-5" library_version="32">
+<package name="ESP32_WROVER_SPARKFUN-IC-POWER_SOT23-5" urn="urn:adsk.eagle:footprint:47662460/1" library_version="32">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <circle x="-1.6002" y="-1.016" radius="0.127" width="0" layer="21"/>
 <wire x1="1.27" y1="0.4294" x2="1.27" y2="-0.4294" width="0.2032" layer="21"/>
@@ -709,7 +709,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="-1.778" y="2.159" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
 <text x="-1.778" y="-2.794" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
 </package>
-<package name="ESP32C6_VARISTOR_CT/CN1812" library_version="12">
+<package name="ESP32C6_VARISTOR_CT/CN1812" urn="urn:adsk.eagle:footprint:47662452/1" library_version="12">
 <description>&lt;b&gt;EPCOS SMD Varistors, MLV; Standard Series&lt;/b&gt;&lt;p&gt;
 Source: www.farnell.com/datasheets/49238.pdf</description>
 <wire x1="-2.35" y1="1.55" x2="2.35" y2="1.55" width="0.1016" layer="51"/>
@@ -723,7 +723,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <text x="-2.5" y="2.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.5" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" library_version="28">
+<package name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" urn="urn:adsk.eagle:footprint:47662457/1" library_version="28">
 <description>&lt;h3&gt;SOT23-3X&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -748,7 +748,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <text x="-1.651" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SOT65P210X110-3N" library_version="55">
+<package name="SOT65P210X110-3N" urn="urn:adsk.eagle:footprint:47662468/1" library_version="55">
 <description>&lt;b&gt;SC-70_3LEADS&lt;/b&gt;&lt;br&gt;
 </description>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
@@ -771,7 +771,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <smd name="2" x="-1.05" y="-0.65" dx="1.05" dy="0.5" layer="1"/>
 <smd name="3" x="1.05" y="0" dx="1.05" dy="0.5" layer="1"/>
 </package>
-<package name="ESP32_WROVER_EAGLE-LTSPICE_R0402" library_version="20">
+<package name="ESP32_WROVER_EAGLE-LTSPICE_R0402" urn="urn:adsk.eagle:footprint:47662456/1" library_version="20">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
 <wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
@@ -792,7 +792,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="ESP32_WROVER_BME680_PSON80P300X300X100-8N" library_version="51">
+<package name="ESP32_WROVER_BME680_PSON80P300X300X100-8N" urn="urn:adsk.eagle:footprint:47662461/1" library_version="51">
 <circle x="2.045" y="1.2" radius="0.1" width="0.2" layer="21"/>
 <circle x="2.045" y="1.2" radius="0.1" width="0.2" layer="51"/>
 <wire x1="-1.53" y1="1.53" x2="-1.53" y2="-1.53" width="0.127" layer="51"/>
@@ -816,7 +816,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <text x="-1.858090625" y="1.9939" size="0.814009375" layer="25" ratio="11">&gt;NAME</text>
 <text x="-1.927440625" y="-2.760059375" size="0.81416875" layer="27" ratio="11">&gt;VALUE</text>
 </package>
-<package name="SJ" library_version="1">
+<package name="SJ" urn="urn:adsk.eagle:footprint:47662477/1" library_version="1">
 <description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
 <wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.1524" layer="21" curve="-90"/>
@@ -836,14 +836,14 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 </package>
-<package name="TP20R" library_version="1">
+<package name="TP20R" urn="urn:adsk.eagle:footprint:47662478/1" library_version="1">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
 <smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
 <text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-1.016" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
-<package name="SON127P600X800X80-9N" library_version="42">
+<package name="SON127P600X800X80-9N" urn="urn:adsk.eagle:footprint:47662464/1" library_version="42">
 <wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="51"/>
 <wire x1="-4" y1="-3" x2="4" y2="-3" width="0.127" layer="51"/>
 <wire x1="-4" y1="3" x2="-4" y2="-3" width="0.127" layer="51"/>
@@ -876,7 +876,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <smd name="8" x="3.895" y="1.905" dx="0.94" dy="0.44" layer="1" roundness="25"/>
 <smd name="9" x="0" y="0" dx="3.4" dy="4.3" layer="1" cream="no"/>
 </package>
-<package name="XCVR_ESP32-C6-WROOM-1-N8" library_version="1">
+<package name="XCVR_ESP32-C6-WROOM-1-N8" urn="urn:adsk.eagle:footprint:47662473/1" library_version="1">
 <text x="-9" y="13.25" size="1.27" layer="25">&gt;NAME</text>
 <text x="-9" y="-14.5" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-9" y1="-12.75" x2="9" y2="-12.75" width="0.127" layer="51"/>
@@ -888,13 +888,13 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <wire x1="-9" y1="6.03" x2="-9" y2="12.75" width="0.127" layer="21"/>
 <wire x1="-9" y1="12.75" x2="9" y2="12.75" width="0.127" layer="21"/>
 <wire x1="9" y1="12.75" x2="9" y2="6.03" width="0.127" layer="21"/>
-<rectangle x1="-9" y1="6.75" x2="9" y2="12.75" layer="43"/>
-<rectangle x1="-9" y1="6.75" x2="9" y2="12.75" layer="41"/>
 <wire x1="-9.75" y1="13" x2="-9.75" y2="-13" width="0.05" layer="39"/>
 <wire x1="-9.75" y1="-13" x2="9.75" y2="-13" width="0.05" layer="39"/>
 <wire x1="9.75" y1="-13" x2="9.75" y2="13" width="0.05" layer="39"/>
 <wire x1="9.75" y1="13" x2="-9.75" y2="13" width="0.05" layer="39"/>
 <wire x1="-9" y1="-12.75" x2="-9" y2="12.75" width="0.127" layer="51"/>
+<rectangle x1="-9" y1="6.75" x2="9" y2="12.75" layer="43"/>
+<rectangle x1="-9" y1="6.75" x2="9" y2="12.75" layer="41"/>
 <circle x="-10" y="5.25" radius="0.1" width="0.2" layer="21"/>
 <circle x="-10" y="5.25" radius="0.1" width="0.2" layer="51"/>
 <smd name="1" x="-8.75" y="5.26" dx="1.5" dy="0.9" layer="1"/>
@@ -935,10 +935,11 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <smd name="29_8" x="-1.505" y="-1.71" dx="0.8" dy="0.8" layer="1"/>
 <smd name="29_9" x="-0.255" y="-1.71" dx="0.8" dy="0.8" layer="1"/>
 </package>
-<package name="SOIC127P1032X265-16N" library_version="57">
+<package name="SOIC127P1032X265-16N" urn="urn:adsk.eagle:footprint:47662470/1" library_version="57">
 <text x="-5.862790625" y="-6.06523125" size="1.27276875" layer="27" align="top-left">&gt;VALUE</text>
 <text x="-5.861540625" y="6.06393125" size="1.2725" layer="25">&gt;NAME</text>
 <circle x="-4.697" y="5.3" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.797" y="4.8" radius="0.2" width="0.4" layer="21"/>
 <wire x1="-3.75" y1="5.775" x2="3.75" y2="5.775" width="0.127" layer="51"/>
 <wire x1="-3.75" y1="-5.775" x2="3.75" y2="-5.775" width="0.127" layer="51"/>
 <wire x1="-3.75" y1="5.775" x2="3.75" y2="5.775" width="0.127" layer="21"/>
@@ -949,7 +950,6 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <wire x1="-5.93" y1="-6.025" x2="5.93" y2="-6.025" width="0.05" layer="39"/>
 <wire x1="-5.93" y1="6.025" x2="-5.93" y2="-6.025" width="0.05" layer="39"/>
 <wire x1="5.93" y1="6.025" x2="5.93" y2="-6.025" width="0.05" layer="39"/>
-<circle x="-2.797" y="4.8" radius="0.2" width="0.4" layer="21"/>
 <smd name="1" x="-4.655" y="4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
 <smd name="2" x="-4.655" y="3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
 <smd name="3" x="-4.655" y="1.905" dx="2.05" dy="0.59" layer="1" roundness="25"/>
@@ -967,7 +967,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <smd name="15" x="4.655" y="3.175" dx="2.05" dy="0.59" layer="1" roundness="25"/>
 <smd name="16" x="4.655" y="4.445" dx="2.05" dy="0.59" layer="1" roundness="25"/>
 </package>
-<package name="SON50P200X200X80-9N" library_version="68">
+<package name="SON50P200X200X80-9N" urn="urn:adsk.eagle:footprint:47662472/1" library_version="68">
 <rectangle x1="-0.28" y1="-0.41" x2="0.28" y2="0.41" layer="31"/>
 <circle x="-1.945" y="0.75" radius="0.1" width="0.2" layer="21"/>
 <circle x="-1.945" y="0.75" radius="0.1" width="0.2" layer="51"/>
@@ -995,6 +995,80 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 </package>
 </packages>
 <packages3d>
+<package3d name="MYBUTTON" urn="urn:adsk.eagle:package:47662741/1" type="model">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 4.6 x 2.8mm&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ck-components.com/media/1479/kmr2.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="MYBUTTON"/>
+</packageinstances>
+</package3d>
+<package3d name="EAGLE-LTSPICE_C0402" urn="urn:adsk.eagle:package:47662579/1" type="model">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="EAGLE-LTSPICE_C0402"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPCP3225X100N" urn="urn:adsk.eagle:package:47662488/1" type="box">
+<packageinstances>
+<packageinstance name="CAPCP3225X100N"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_RCL_CT3528" urn="urn:adsk.eagle:package:47662504/1" type="box">
+<description>&lt;b&gt;TANTALUM CAPACITOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="RCL_CT3528"/>
+</packageinstances>
+</package3d>
+<package3d name="ADAFRUIT_CHIP-LED0603" urn="urn:adsk.eagle:package:47662500/1" type="box">
+<description>&lt;b&gt;Hyper CHIPLED Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
+LB Q993&lt;br&gt;
+Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
+<packageinstances>
+<packageinstance name="ADAFRUIT_CHIP-LED0603"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_USBLC6-2SC6Y" urn="urn:adsk.eagle:package:47662496/1" type="box">
+<description>&lt;b&gt;SOT23-6(ESDA6V1-5SC6Y)&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOT95P280X145-6N"/>
+</packageinstances>
+</package3d>
+<package3d name="DIOC1608X36N" urn="urn:adsk.eagle:package:47662731/1" type="model">
+<packageinstances>
+<packageinstance name="DIOC1608X36N"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_DIODE" urn="urn:adsk.eagle:package:47662501/1" type="box">
+<description>Schottky Barrier Rectifier Diode</description>
+<packageinstances>
+<packageinstance name="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD3716X135N" urn="urn:adsk.eagle:package:47662607/1" type="model">
+<description>&lt;b&gt;SOD-123 CASE425-04 ISSUE G&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOD3716X135N"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_SOT95P280X125-5N" urn="urn:adsk.eagle:package:47662497/1" type="box">
+<description>&lt;b&gt;SSOP5&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOT95P280X125-5N"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT95P280X120-5N" urn="urn:adsk.eagle:package:47662493/1" type="box">
+<description>&lt;b&gt;SOT23-5_1&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOT95P280X120-5N"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_USB4110GFA" urn="urn:adsk.eagle:package:47662505/1" type="box">
+<description>&lt;b&gt;USB4110-GF-A-1&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SAMACSYS_PARTS_USB4110GFA"/>
+</packageinstances>
+</package3d>
 <package3d name="JST04_1MM_RA" urn="urn:adsk.eagle:package:41390393/1" type="box">
 <description>&lt;h3&gt;SMD- 4 Pin Right Angle &lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -1006,6 +1080,100 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 &lt;/ul&gt;&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="JST04_1MM_RA"/>
+</packageinstances>
+</package3d>
+<package3d name="112ATAARR03ATTEND" urn="urn:adsk.eagle:package:47662484/1" type="box">
+<description>&lt;b&gt;112A-TAAR-R03 ATTEND-1&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="112ATAARR03ATTEND"/>
+</packageinstances>
+</package3d>
+<package3d name="IND_4828-WE-TPC_WRE" urn="urn:adsk.eagle:package:47662490/1" type="box">
+<packageinstances>
+<packageinstance name="IND_4828-WE-TPC_WRE"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_SOT23-5" urn="urn:adsk.eagle:package:47662499/1" type="box">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="ESP32_WROVER_SPARKFUN-IC-POWER_SOT23-5"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_VARISTOR_CT/CN1812" urn="urn:adsk.eagle:package:47662507/1" type="box">
+<description>&lt;b&gt;EPCOS SMD Varistors, MLV; Standard Series&lt;/b&gt;&lt;p&gt;
+Source: www.farnell.com/datasheets/49238.pdf</description>
+<packageinstances>
+<packageinstance name="ESP32C6_VARISTOR_CT/CN1812"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" urn="urn:adsk.eagle:package:47662751/1" type="model">
+<description>&lt;h3&gt;SOT23-3X&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Total Size: 3mm x 2.5mm&lt;/li&gt;
+&lt;li&gt;Landing Pad Size: .8mm x .9mm&lt;/li&gt;
+&lt;li&gt;Pitch: 2 (vertical) .95mm (horizontal)&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<packageinstances>
+<packageinstance name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT65P210X110-3N" urn="urn:adsk.eagle:package:47662491/1" type="box">
+<description>&lt;b&gt;SC-70_3LEADS&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOT65P210X110-3N"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32_WROVER_EAGLE-LTSPICE_R0402" urn="urn:adsk.eagle:package:47662483/1" type="model">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="ESP32_WROVER_EAGLE-LTSPICE_R0402"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_BME680" urn="urn:adsk.eagle:package:47662498/1" type="box">
+<packageinstances>
+<packageinstance name="ESP32_WROVER_BME680_PSON80P300X300X100-8N"/>
+</packageinstances>
+</package3d>
+<package3d name="ESP32C6_SON127P600X800X80-9N" urn="urn:adsk.eagle:package:47662495/1" type="box">
+<packageinstances>
+<packageinstance name="SON127P600X800X80-9N"/>
+</packageinstances>
+</package3d>
+<package3d name="SOIC127P1032X265-16N" urn="urn:adsk.eagle:package:47662489/1" type="box">
+<packageinstances>
+<packageinstance name="SOIC127P1032X265-16N"/>
+</packageinstances>
+</package3d>
+<package3d name="SON50P200X200X80-9N" urn="urn:adsk.eagle:package:47662487/1" type="box">
+<packageinstances>
+<packageinstance name="SON50P200X200X80-9N"/>
+</packageinstances>
+</package3d>
+<package3d name="SJ" urn="urn:adsk.eagle:package:47662480/1" type="box">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="SJ"/>
+</packageinstances>
+</package3d>
+<package3d name="XCVR_ESP32-C6-WROOM-1-N8" urn="urn:adsk.eagle:package:47662482/1" type="box">
+<packageinstances>
+<packageinstance name="XCVR_ESP32-C6-WROOM-1-N8"/>
+</packageinstances>
+</package3d>
+<package3d name="FH34SRJ24S05SH99" urn="urn:adsk.eagle:package:47662509/1" type="box">
+<description>&lt;b&gt;FH34SRJ-24S-0.5SH(99)-4&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="FH34SRJ24S05SH99"/>
+</packageinstances>
+</package3d>
+<package3d name="TP20R" urn="urn:adsk.eagle:package:47662810/1" type="model">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="TP20R"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1196,20 +1364,18 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BOOT_BUTTON" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="MYBUTTON" value="BUTTON_CUSYOMV1" x="79.0305" y="80.5488" smashed="yes" rot="R180">
+<element name="BOOT_BUTTON" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="MYBUTTON" package3d_urn="urn:adsk.eagle:package:47662741/1" value="BUTTON_CUSYOMV1BUTTON" x="79.0305" y="80.5488" smashed="yes" rot="R180">
 <attribute name="NAME" x="82.8405" y="78.593" size="0.8128" layer="25" rot="R180"/>
 </element>
-<element name="C1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="100nF" x="167.005" y="-20.1168" smashed="yes" rot="R90">
+<element name="C1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="100nF" x="167.005" y="-20.1168" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.2176" y="-20.7264" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="245.745" y="59.8932" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="245.745" y="59.8932" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="168.91" y="-20.7518" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="100nF" x="67.4878" y="80.4164" smashed="yes" rot="R90">
+<element name="C10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="100nF" x="67.4878" y="80.4164" smashed="yes" rot="R90">
 <attribute name="NAME" x="68.199" y="80.1878" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="151.3078" y="121.0564" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="151.3078" y="121.0564" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="69.3928" y="79.7814" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C10_SUPERCAP" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="CAPCP3225X100N" value="CPH3225A" x="108.9152" y="22.0472" smashed="yes" rot="R270">
+<element name="C10_SUPERCAP" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="CAPCP3225X100N" package3d_urn="urn:adsk.eagle:package:47662488/1" value="CPH3225A" x="108.9152" y="22.0472" smashed="yes" rot="R270">
 <attribute name="AVAILABILITY" value="Not in stock" x="53.0352" y="-42.7228" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/CPH3225A/Seiko+Instruments/view-part/?ref=eda" x="53.0352" y="-42.7228" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value=" 11 mF (EDLC) Supercapacitor 3.3 V 1210 (3225 Metric) - - " x="53.0352" y="-42.7228" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1222,89 +1388,76 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/CPH3225A/Seiko+Instruments/view-part/?ref=snap" x="53.0352" y="-42.7228" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="110.678009375" y="23.496659375" size="0.60970625" layer="27" rot="R270"/>
 </element>
-<element name="C1_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="4.7uF" x="143.1798" y="31.3436" smashed="yes">
+<element name="C1_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="4.7uF" x="143.1798" y="31.3436" smashed="yes">
 <attribute name="NAME" x="141.6558" y="30.0482" size="0.6096" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="172.3898" y="-47.3964" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="172.3898" y="-47.3964" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="142.5448" y="29.4386" size="1.27" layer="27"/>
 </element>
-<element name="C1_BAT1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="4.7uF" x="141.5796" y="12.8778" smashed="yes" rot="R180">
+<element name="C1_BAT1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="4.7uF" x="141.5796" y="12.8778" smashed="yes" rot="R180">
 <attribute name="NAME" x="144.0688" y="12.192" size="0.8128" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="79.3496" y="81.4578" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="79.3496" y="81.4578" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="142.2146" y="14.7828" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C1_BAT2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="4.7uF" x="140.8176" y="17.4244" smashed="yes" rot="R270">
+<element name="C1_BAT2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="4.7uF" x="140.8176" y="17.4244" smashed="yes" rot="R270">
 <attribute name="NAME" x="138.9634" y="19.5326" size="0.8128" layer="25" rot="R270"/>
-<attribute name="SPICEMODEL" value="NONE" x="72.2376" y="-54.9656" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="72.2376" y="-54.9656" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="138.9126" y="18.0594" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="100nF" x="168.2496" y="-20.1168" smashed="yes" rot="R90">
+<element name="C2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="100nF" x="168.2496" y="-20.1168" smashed="yes" rot="R90">
 <attribute name="NAME" x="168.8592" y="-21.9202" size="0.8128" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="246.9896" y="67.5132" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="246.9896" y="67.5132" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="170.1546" y="-20.7518" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C2_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="4.7uF" x="154.4066" y="33.1216" smashed="yes" rot="R90">
+<element name="C2_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="4.7uF" x="154.4066" y="33.1216" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.4668" y="31.2928" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="233.1466" y="71.2216" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="233.1466" y="71.2216" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="156.3116" y="32.4866" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="RCL_CT3528" value="100uF TANT" x="152.0444" y="13.9192" smashed="yes" rot="R90">
+<element uuid="2882400055" name="C3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="RCL_CT3528" package3d_urn="urn:adsk.eagle:package:47662504/1" value="100uF TANT" x="152.0444" y="13.9192" smashed="yes" rot="R90">
 <attribute name="NAME" x="152.7556" y="18.0594" size="0.8128" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="0" x="186.3344" y="91.3892" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="186.3344" y="91.3892" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="155.2194" y="11.3792" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="4.7uF/25V" x="123.4948" y="6.5024" smashed="yes" rot="R90">
+<element name="C4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="4.7uF/25V" x="123.4948" y="6.5024" smashed="yes" rot="R90">
 <attribute name="NAME" x="125.0188" y="5.969" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="186.9948" y="52.2224" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="186.9948" y="52.2224" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="125.3998" y="5.8674" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C4_USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="100nF" x="165.3794" y="30.5054" smashed="yes" rot="R90">
+<element name="C4_USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="100nF" x="165.3794" y="30.5054" smashed="yes" rot="R90">
 <attribute name="NAME" x="164.4142" y="28.702" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="239.0394" y="68.6054" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="239.0394" y="68.6054" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="167.2844" y="29.8704" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF" x="42.5958" y="80.4418" smashed="yes" rot="R90">
+<element name="C5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF" x="42.5958" y="80.4418" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.2308" y="80.0354" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="131.4958" y="96.9518" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="131.4958" y="96.9518" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="44.5008" y="79.8068" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C5_USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="4.7uF" x="171.577" y="32.258" smashed="yes" rot="R90">
+<element name="C5_USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="4.7uF" x="171.577" y="32.258" smashed="yes" rot="R90">
 <attribute name="NAME" x="173.1264" y="32.3342" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="245.237" y="79.248" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="245.237" y="79.248" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="173.482" y="31.623" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="100nF" x="82.6516" y="80.518" smashed="yes" rot="R90">
+<element name="C6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="100nF" x="82.6516" y="80.518" smashed="yes" rot="R90">
 <attribute name="NAME" x="83.439" y="80.0354" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="166.4716" y="98.298" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="166.4716" y="98.298" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="84.5566" y="79.883" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="10uF" x="110.3122" y="-0.4572" smashed="yes">
+<element name="C7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="10uF" x="110.3122" y="-0.4572" smashed="yes">
 <attribute name="NAME" x="109.347" y="-2.5908" size="1.27" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="157.3022" y="-84.2772" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="157.3022" y="-84.2772" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="109.6772" y="-2.3622" size="1.27" layer="27"/>
 </element>
-<element name="C8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="100nF" x="106.7054" y="21.463" smashed="yes" rot="R90">
+<element name="C8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="100nF" x="106.7054" y="21.463" smashed="yes" rot="R90">
 <attribute name="NAME" x="106.0704" y="20.828" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="190.5254" y="46.863" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="190.5254" y="46.863" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="108.6104" y="20.828" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="100nF" x="22.9108" y="72.644" smashed="yes" rot="R90">
+<element name="C9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="100nF" x="22.9108" y="72.644" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.1234" y="71.9582" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="106.7308" y="105.664" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="106.7308" y="105.664" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="24.8158" y="72.009" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CHANGE_BUTTON" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="MYBUTTON" value="BUTTON_CUSYOMV1" x="63.9572" y="80.5488" smashed="yes" rot="R180">
+<element name="CHANGE_BUTTON" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="MYBUTTON" package3d_urn="urn:adsk.eagle:package:47662741/1" value="BUTTON_CUSYOMV1BUTTON" x="63.9572" y="80.5488" smashed="yes" rot="R180">
 <attribute name="NAME" x="68.4022" y="78.5422" size="0.8128" layer="25" rot="R180"/>
 </element>
-<element name="CHG_LED" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ADAFRUIT_CHIP-LED0603" value="" x="143.1544" y="32.7152" smashed="yes" rot="R90">
+<element uuid="2882400025" name="CHG_LED" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ADAFRUIT_CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:47662500/1" override_locally_modified="yes" value="" x="143.1544" y="32.7152" smashed="yes" rot="R90">
 <attribute name="NAME" x="145.161" y="34.0106" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="143.7894" y="34.6202" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C_DELAY" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="100nF" x="61.6712" y="69.7738" smashed="yes" rot="R90">
+<element name="C_DELAY" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="100nF" x="61.6712" y="69.7738" smashed="yes" rot="R90">
 <attribute name="NAME" x="63.1444" y="68.4022" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="130.2512" y="91.3638" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="130.2512" y="91.3638" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="63.5762" y="69.1388" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="D1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOT95P280X145-6N" value="USBLC6-2SC6Y" x="168.6814" y="30.226" smashed="yes">
+<element uuid="2882400023" name="D1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOT95P280X145-6N" package3d_urn="urn:adsk.eagle:package:47662496/1" override_locally_modified="yes" value="USBLC6-2SC6Y" x="168.6814" y="30.226" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="249.9614" y="-63.754" size="1.778" layer="27" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=eda" x="249.9614" y="-63.754" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" 17V Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-6 " x="249.9614" y="-63.754" size="1.778" layer="27" display="off"/>
@@ -1314,47 +1467,21 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="PACKAGE" value="SOT-23-6 STMicroelectronics" x="249.9614" y="-63.754" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="None" x="249.9614" y="-63.754" size="1.778" layer="27" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=snap" x="249.9614" y="-63.754" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="168.6814" y="30.226" size="1.27" layer="27" align="center"/>
 </element>
-<element name="D10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" value="PGB1010603MR" x="58.4708" y="-3.81" smashed="yes" rot="R90">
-<attribute name="AVAILABILITY" value="In Stock" x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=eda" x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value=" 150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric) " x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Littelfuse Inc." x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MP" value="PGB1010603MR" x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="D10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" package3d_urn="urn:adsk.eagle:package:47662731/1" value="PGB1010603MRDIODE" x="58.4708" y="-3.81" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.0654" y="-5.2188" size="0.6096" layer="25" rot="R90"/>
-<attribute name="PACKAGE" value="0603 Littelfuse Inc." x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PRICE" value="None" x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5659453&amp;manufacturer=Littelfuse Inc.&amp;part_name=PGB1010603MR&amp;search_term=None" x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=snap" x="157.5308" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="60.4322" y="-5.2696" size="0.6096" layer="27" rot="R90" align="top-left"/>
 </element>
-<element name="D11" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" value="PGB1010603MR" x="56.4896" y="-3.7846" smashed="yes" rot="R90">
-<attribute name="AVAILABILITY" value="In Stock" x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=eda" x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value=" 150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric) " x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Littelfuse Inc." x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MP" value="PGB1010603MR" x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="D11" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" package3d_urn="urn:adsk.eagle:package:47662731/1" value="PGB1010603MRDIODE" x="56.4896" y="-3.7846" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.4774" y="-5.2442" size="0.6096" layer="25" rot="R90"/>
-<attribute name="PACKAGE" value="0603 Littelfuse Inc." x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PRICE" value="None" x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5659453&amp;manufacturer=Littelfuse Inc.&amp;part_name=PGB1010603MR&amp;search_term=None" x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=snap" x="155.5496" y="45.7454" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="54.9458" y="-5.2188" size="0.6096" layer="27" rot="R90" align="top-left"/>
 </element>
-<element name="D12" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" value="PGB1010603MR" x="51.1302" y="-3.9878" smashed="yes" rot="R90">
-<attribute name="AVAILABILITY" value="In Stock" x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=eda" x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value=" 150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric) " x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Littelfuse Inc." x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MP" value="PGB1010603MR" x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="D12" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" package3d_urn="urn:adsk.eagle:package:47662731/1" value="PGB1010603MRDIODE" x="51.1302" y="-3.9878" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.9656" y="-5.6506" size="0.6096" layer="25" rot="R90"/>
-<attribute name="PACKAGE" value="0603 Littelfuse Inc." x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PRICE" value="None" x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5659453&amp;manufacturer=Littelfuse Inc.&amp;part_name=PGB1010603MR&amp;search_term=None" x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=snap" x="150.1902" y="53.1622" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="49.4086" y="-5.6252" size="0.6096" layer="27" rot="R90" align="top-left"/>
 </element>
-<element name="D2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0" value="SD0805S020S1R0" x="155.8798" y="14.0716" smashed="yes" rot="R90">
+<element uuid="2882400012" name="D2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0" package3d_urn="urn:adsk.eagle:package:47662501/1" value="SD0805S020S1R0" x="155.8798" y="14.0716" smashed="yes" rot="R90">
 <attribute name="CENTROID_NOT_SPECIFIED" value="No" x="258.7498" y="48.3616" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://datasheets.avx.com/schottky.pdf" x="258.7498" y="48.3616" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIGIKEY_DESCRIPTION" value="DIODE SCHOTTKY 20V 1A 0805" x="258.7498" y="48.3616" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1370,59 +1497,23 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="TEMPERATURE_RANGE_HIGH" value="+125°C" x="258.7498" y="48.3616" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="258.7498" y="48.3616" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOD3716X135N" value="MBR0530" x="119.7102" y="4.7752" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/MBR0530/Onsemi/view-part/?ref=eda" x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" Diode Schottky 30 V 500mA Surface Mount SOD-123 " x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="ON Semiconductor" x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="MBR0530" x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
+<element name="D3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOD3716X135N" package3d_urn="urn:adsk.eagle:package:47662607/1" value="MBR0530DIODE" x="119.7102" y="4.7752" smashed="yes">
 <attribute name="NAME" x="117.7798" y="8.1026" size="0.8128" layer="25" align="center"/>
-<attribute name="PACKAGE" value="SOD-123-2 ON Semiconductor" x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=179458&amp;manufacturer=ON Semiconductor&amp;part_name=MBR0530&amp;search_term=None" x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/MBR0530/Onsemi/view-part/?ref=snap" x="184.4802" y="-94.2848" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="119.5832" y="7.0358" size="0.8128" layer="25" align="center"/>
 </element>
-<element name="D4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOD3716X135N" value="MBR0530" x="119.761" y="0.6604" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/MBR0530/Onsemi/view-part/?ref=eda" x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" Diode Schottky 30 V 500mA Surface Mount SOD-123 " x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="ON Semiconductor" x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="MBR0530" x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
+<element name="D4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOD3716X135N" package3d_urn="urn:adsk.eagle:package:47662607/1" value="MBR0530DIODE" x="119.761" y="0.6604" smashed="yes">
 <attribute name="NAME" x="117.8306" y="-1.6002" size="0.8128" layer="25" align="center"/>
-<attribute name="PACKAGE" value="SOD-123-2 ON Semiconductor" x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=179458&amp;manufacturer=ON Semiconductor&amp;part_name=MBR0530&amp;search_term=None" x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/MBR0530/Onsemi/view-part/?ref=snap" x="194.691" y="-98.3996" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="119.6086" y="-2.5654" size="0.8128" layer="25" align="center"/>
 </element>
-<element name="D5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOD3716X135N" value="MBR0530" x="110.3376" y="8.3058" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/MBR0530/Onsemi/view-part/?ref=eda" x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" Diode Schottky 30 V 500mA Surface Mount SOD-123 " x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="ON Semiconductor" x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="MBR0530" x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
+<element name="D5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOD3716X135N" package3d_urn="urn:adsk.eagle:package:47662607/1" value="MBR0530DIODE" x="110.3376" y="8.3058" smashed="yes">
 <attribute name="NAME" x="108.4326" y="11.6078" size="0.8128" layer="25" align="center"/>
-<attribute name="PACKAGE" value="SOD-123-2 ON Semiconductor" x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=179458&amp;manufacturer=ON Semiconductor&amp;part_name=MBR0530&amp;search_term=None" x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/MBR0530/Onsemi/view-part/?ref=snap" x="195.4276" y="-90.7542" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="110.236" y="10.6172" size="0.8128" layer="25" align="center"/>
 </element>
-<element name="D6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" value="PGB1010603MR" x="104.4948" y="-6.2294" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=eda" x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" 150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric) " x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Littelfuse Inc." x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="PGB1010603MR" x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
+<element name="D6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" package3d_urn="urn:adsk.eagle:package:47662731/1" value="PGB1010603MRDIODE" x="104.4948" y="-6.2294" smashed="yes">
 <attribute name="NAME" x="103.086" y="-4.522" size="0.6096" layer="25"/>
-<attribute name="PACKAGE" value="0603 Littelfuse Inc." x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5659453&amp;manufacturer=Littelfuse Inc.&amp;part_name=PGB1010603MR&amp;search_term=None" x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=snap" x="123.5448" y="-105.2894" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="103.0606" y="-4.7364" size="0.6096" layer="27" align="top-left"/>
 </element>
-<element name="D7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0" value="SD0805S020S1R0" x="101.2952" y="35.4584" smashed="yes">
+<element uuid="2882400050" name="D7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0" package3d_urn="urn:adsk.eagle:package:47662501/1" value="SD0805S020S1R0" x="101.2952" y="35.4584" smashed="yes">
 <attribute name="CENTROID_NOT_SPECIFIED" value="No" x="141.9352" y="-67.4116" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="http://datasheets.avx.com/schottky.pdf" x="141.9352" y="-67.4116" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY_DESCRIPTION" value="DIODE SCHOTTKY 20V 1A 0805" x="141.9352" y="-67.4116" size="1.778" layer="27" display="off"/>
@@ -1438,83 +1529,55 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="TEMPERATURE_RANGE_HIGH" value="+125°C" x="141.9352" y="-67.4116" size="1.778" layer="27" display="off"/>
 <attribute name="TEMPERATURE_RANGE_LOW" value="-55°C" x="141.9352" y="-67.4116" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" value="PGB1010603MR" x="30.5054" y="70.8152" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=eda" x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" 150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric) " x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Littelfuse Inc." x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="PGB1010603MR" x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
+<element name="D8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" package3d_urn="urn:adsk.eagle:package:47662731/1" value="PGB1010603MRDIODE" x="30.5054" y="70.8152" smashed="yes">
 <attribute name="NAME" x="29.0204" y="71.7352" size="0.6096" layer="25"/>
-<attribute name="PACKAGE" value="0603 Littelfuse Inc." x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5659453&amp;manufacturer=Littelfuse Inc.&amp;part_name=PGB1010603MR&amp;search_term=None" x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=snap" x="57.1754" y="-28.2448" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="29.0204" y="69.8952" size="0.6096" layer="27" align="top-left"/>
 </element>
-<element name="D9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" value="PGB1010603MR" x="53.0606" y="16.129" smashed="yes" rot="R90">
-<attribute name="AVAILABILITY" value="In Stock" x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=eda" x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value=" 150V (Typ) Clamp - Ipp Tvs Diode Surface Mount 0603 (1608 Metric) " x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Littelfuse Inc." x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MP" value="PGB1010603MR" x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="D9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="DIOC1608X36N" package3d_urn="urn:adsk.eagle:package:47662731/1" value="PGB1010603MRDIODE" x="53.0606" y="16.129" smashed="yes" rot="R90">
 <attribute name="NAME" x="53.436" y="14.3138" size="0.6096" layer="25" rot="R180"/>
-<attribute name="PACKAGE" value="0603 Littelfuse Inc." x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PRICE" value="None" x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=5659453&amp;manufacturer=Littelfuse Inc.&amp;part_name=PGB1010603MR&amp;search_term=None" x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=snap" x="152.1206" y="50.419" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="58.832" y="12.993" size="0.6096" layer="27" rot="R180" align="top-left"/>
 </element>
-<element name="EPD_C1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="122.301" y="-7.62" smashed="yes" rot="R90">
+<element name="EPD_C1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="122.301" y="-7.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="123.19" y="-5.334" size="0.4064" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="195.961" y="48.26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="195.961" y="48.26" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="124.206" y="-8.255" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="110.0328" y="-7.62" smashed="yes" rot="R90">
+<element name="EPD_C10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="110.0328" y="-7.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="111.1504" y="-9.2964" size="0.4064" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="178.6128" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="178.6128" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="111.9378" y="-8.255" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C11" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="101.4222" y="-9.8806" smashed="yes" rot="R90">
+<element name="EPD_C11" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="101.4222" y="-9.8806" smashed="yes" rot="R90">
 <attribute name="NAME" x="102.743" y="-10.8204" size="0.4064" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="170.0022" y="42.1894" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="170.0022" y="42.1894" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="103.3272" y="-10.5156" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C12" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="99.7458" y="-9.8298" smashed="yes" rot="R90">
+<element name="EPD_C12" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="99.7458" y="-9.8298" smashed="yes" rot="R90">
 <attribute name="NAME" x="98.8314" y="-10.8966" size="0.4064" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="168.3258" y="32.0802" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="168.3258" y="32.0802" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="101.6508" y="-10.4648" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="120.523" y="-7.5946" smashed="yes" rot="R90">
+<element name="EPD_C2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="120.523" y="-7.5946" smashed="yes" rot="R90">
 <attribute name="NAME" x="121.4628" y="-9.3218" size="0.4064" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="194.183" y="57.1754" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="194.183" y="57.1754" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="122.428" y="-8.2296" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="0.1uF/50V" x="118.6688" y="-7.6708" smashed="yes" rot="R90">
+<element name="EPD_C5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="0.1uF/50V" x="118.6688" y="-7.6708" smashed="yes" rot="R90">
 <attribute name="NAME" x="119.7102" y="-5.5626" size="0.4064" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="182.1688" y="48.2092" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="182.1688" y="48.2092" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="120.5738" y="-8.3058" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="116.967" y="-7.7216" smashed="yes" rot="R90">
+<element name="EPD_C6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="116.967" y="-7.7216" smashed="yes" rot="R90">
 <attribute name="NAME" x="117.9068" y="-9.525" size="0.4064" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="190.627" y="65.9384" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="190.627" y="65.9384" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="118.872" y="-8.3566" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="115.2652" y="-7.7216" smashed="yes" rot="R90">
+<element name="EPD_C7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="115.2652" y="-7.7216" smashed="yes" rot="R90">
 <attribute name="NAME" x="116.3574" y="-5.6134" size="0.4064" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="188.9252" y="74.8284" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="188.9252" y="74.8284" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="117.1702" y="-8.3566" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="113.5888" y="-7.6962" smashed="yes" rot="R90">
+<element name="EPD_C8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="113.5888" y="-7.6962" smashed="yes" rot="R90">
 <attribute name="NAME" x="114.6048" y="-9.3726" size="0.4064" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="187.2488" y="83.7438" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="187.2488" y="83.7438" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="115.4938" y="-8.3312" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="EPD_C9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_C0402" value="1uF/50V" x="111.8108" y="-7.6708" smashed="yes" rot="R90">
+<element name="EPD_C9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="EAGLE-LTSPICE_C0402" package3d_urn="urn:adsk.eagle:package:47662579/1" value="1uF/50V" x="111.8108" y="-7.6708" smashed="yes" rot="R90">
 <attribute name="NAME" x="112.8014" y="-5.6134" size="0.4064" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="190.5508" y="12.6492" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="190.5508" y="12.6492" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="113.7158" y="-8.3058" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="IC1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOT95P280X125-5N" value="BD5229G-TR" x="58.7502" y="69.4182" smashed="yes">
+<element uuid="2882400007" name="IC1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOT95P280X125-5N" package3d_urn="urn:adsk.eagle:package:47662497/1" override_locally_modified="yes" value="BD5229G-TR" x="58.7502" y="69.4182" smashed="yes">
 <attribute name="ARROW_PART_NUMBER" value="" x="126.0602" y="-24.5618" size="1.778" layer="27" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="" x="126.0602" y="-24.5618" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="Voltage Detector with Adjustable Delay Time: CMOS processes are utilized to develop high precision, low current consumption CMOS reset ICs that allow arbitrary setting of the delay time. The extensive lineup includes both Nch Open Drain and CMOS output types in a wide range of detection voltages (from 2.3V to 6.0V, in 0.1V steps), enabling selection of the ideal solution based on customer requirements. In addition, the entire series is of course both lead-free and RoHS-compliant." x="126.0602" y="-24.5618" size="1.778" layer="27" display="off"/>
@@ -1526,7 +1589,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="NAME" x="58.9534" y="71.755" size="0.8128" layer="25" align="center"/>
 <attribute name="VALUE" x="58.9026" y="66.9798" size="0.8128" layer="25" align="center"/>
 </element>
-<element name="IC4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOT95P280X120-5N" value="XC6220A331MR-G" x="146.9644" y="15.0368" smashed="yes">
+<element uuid="2882400021" name="IC4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOT95P280X120-5N" package3d_urn="urn:adsk.eagle:package:47662493/1" override_locally_modified="yes" value="XC6220A331MR-G" x="146.9644" y="15.0368" smashed="yes">
 <attribute name="ARROW_PART_NUMBER" value="" x="199.0344" y="-78.9432" size="1.778" layer="27" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="" x="199.0344" y="-78.9432" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="LDO Voltage Regulators" x="199.0344" y="-78.9432" size="1.778" layer="27" display="off"/>
@@ -1536,8 +1599,9 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="MOUSER_PART_NUMBER" value="865-XC6220A331MR-G" x="199.0344" y="-78.9432" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6220A331MR-G?qs=AsjdqWjXhJ8ZSWznL1J0gg%3D%3D" x="199.0344" y="-78.9432" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="147.0152" y="17.5514" size="0.8128" layer="25" align="center"/>
+<attribute name="VALUE" x="146.9644" y="15.0368" size="1.27" layer="27" align="center"/>
 </element>
-<element name="J1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="FH34SRJ24S05SH99" value="FH34SRJ-24S-0.5SH_99_" x="116.5558" y="-14.451" smashed="yes">
+<element uuid="2882400003" name="J1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="FH34SRJ24S05SH99" package3d_urn="urn:adsk.eagle:package:47662509/1" override_locally_modified="yes" value="FH34SRJ-24S-0.5SH_99_" x="116.5558" y="-14.451" smashed="yes">
 <attribute name="ARROW_PART_NUMBER" value="" x="163.5458" y="-70.331" size="1.778" layer="27" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="" x="163.5458" y="-70.331" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value="24 Position FFC, FPC Connector Contacts, Top and Bottom 0.020&quot; (0.50mm) Surface Mount, Right Angle" x="163.5458" y="-70.331" size="1.778" layer="27" display="off"/>
@@ -1549,7 +1613,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="NAME" x="125.4966" y="-14.505" size="0.8128" layer="25" align="center"/>
 <attribute name="VALUE" x="131.491" y="-15.5972" size="0.8128" layer="25" align="center"/>
 </element>
-<element name="J2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SAMACSYS_PARTS_USB4110GFA" value="" x="183.18621875" y="26.0477" smashed="yes" rot="R90">
+<element name="J2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SAMACSYS_PARTS_USB4110GFA" package3d_urn="urn:adsk.eagle:package:47662505/1" override_locally_modified="yes" value="SAMACSYS_PARTS_USB4110-GF-A" x="183.18621875" y="26.0477" smashed="yes" rot="R90">
 <attribute name="ARROW_PART_NUMBER" value="" x="218.74621875" y="59.0677" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="" x="218.74621875" y="59.0677" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="CONN USB 2.0 TYPE-C R/A SMT" x="218.74621875" y="59.0677" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1566,7 +1630,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="PROD_ID" value="CONN-13694" x="238.7688" y="22.8219" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="179.2312" y="-10.8077" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="J4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="112ATAARR03ATTEND" value="112A-TAAR-R03_ATTEND" x="20.0762" y="67.8106" smashed="yes" rot="R270">
+<element uuid="2882400015" name="J4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="112ATAARR03ATTEND" package3d_urn="urn:adsk.eagle:package:47662484/1" override_locally_modified="yes" value="112A-TAAR-R03_ATTEND" x="20.0762" y="67.8106" smashed="yes" rot="R270">
 <attribute name="ARROW_PART_NUMBER" value="" x="13.7262" y="-18.5494" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ARROW_PRICE-STOCK" value="" x="13.7262" y="-18.5494" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="Micro SD Card Socket, Push-Push Type, Top Mount, SMT, H=1.83mm, 10u" x="13.7262" y="-18.5494" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1580,31 +1644,30 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="NAME" x="32.9044" y="52.9432" size="0.8128" layer="25" rot="R270" align="center"/>
 <attribute name="VALUE" x="33.9458" y="58.582" size="0.8128" layer="25" rot="R270" align="center"/>
 </element>
-<element name="L1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="IND_4828-WE-TPC_WRE" value="68uH" x="110.3884" y="3.3782" smashed="yes">
+<element uuid="2882400027" name="L1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="IND_4828-WE-TPC_WRE" package3d_urn="urn:adsk.eagle:package:47662490/1" override_locally_modified="yes" value="68uH" x="110.3884" y="3.3782" smashed="yes">
 <attribute name="COPYRIGHT" value="Copyright (C) 2024 Ultra Librarian. All rights reserved." x="159.9184" y="-15.6718" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="744043680" x="159.9184" y="-15.6718" size="1.778" layer="27" display="off"/>
 <attribute name="MFR_NAME" value="Wurth Electronics" x="159.9184" y="-15.6718" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="113.3402" y="3.175" size="1.27" layer="27" ratio="6"/>
+<attribute name="VALUE" x="108.6596" y="2.7432" size="1.27" layer="27" ratio="6"/>
 </element>
-<element name="MCP73831" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_SPARKFUN-IC-POWER_SOT23-5" value="" x="147.6248" y="31.8008" smashed="yes" rot="R90">
+<element uuid="2882400031" name="MCP73831" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_SPARKFUN-IC-POWER_SOT23-5" package3d_urn="urn:adsk.eagle:package:47662499/1" override_locally_modified="yes" value="ESP32_WROVER_SPARKFUN-IC-POWER_MCP73831" x="147.6248" y="31.8008" smashed="yes" rot="R90">
 <attribute name="NAME" x="150.368" y="29.8196" size="0.6096" layer="25" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="IC-09995" x="203.5048" y="102.9208" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="150.4188" y="30.0228" size="0.6096" layer="27" ratio="20" rot="R90"/>
 </element>
-<element name="PFMF.050.1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32C6_VARISTOR_CT/CN1812" value="" x="168.4782" y="18.0086" smashed="yes">
+<element uuid="2882400017" name="PFMF.050.1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32C6_VARISTOR_CT/CN1812" package3d_urn="urn:adsk.eagle:package:47662507/1" override_locally_modified="yes" value="ESP32C6_VARISTORCN1812" x="168.4782" y="18.0086" smashed="yes">
 <attribute name="NAME" x="165.6226" y="20.3054" size="0.8128" layer="25"/>
 <attribute name="POPULARITY" value="0" x="190.0682" y="-37.8714" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="165.9782" y="14.5086" size="1.27" layer="27"/>
 </element>
-<element name="Q1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" value="20V/4.2A/52mΩ/1.4W" x="152.7302" y="23.6982" smashed="yes">
+<element name="Q1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" package3d_urn="urn:adsk.eagle:package:47662751/1" value="20V/4.2A/52mΩ/1.4W" x="152.7302" y="23.6982" smashed="yes">
 <attribute name="NAME" x="151.0792" y="23.6982" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="TRAN-14388" x="213.6902" y="-11.8618" size="1.778" layer="27" display="off"/>
 </element>
-<element name="Q2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" value="20V/4.2A/52mΩ/1.4W" x="104.8004" y="-1.3462" smashed="yes" rot="R270">
+<element name="Q2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" package3d_urn="urn:adsk.eagle:package:47662751/1" value="20V/4.2A/52mΩ/1.4W" x="104.8004" y="-1.3462" smashed="yes" rot="R270">
 <attribute name="NAME" x="104.8004" y="0.3048" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="TRAN-14388" x="69.2404" y="-67.3862" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="Q3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOT65P210X110-3N" value="SI1308EDL-T1-GE3" x="95.4278" y="-13.3604" smashed="yes">
+<element uuid="2882400048" name="Q3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOT65P210X110-3N" package3d_urn="urn:adsk.eagle:package:47662491/1" value="SI1308EDL-T1-GE3" x="95.4278" y="-13.3604" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="117.0178" y="-116.2304" size="1.778" layer="27" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/SI1308EDL-T1-GE3/Vishay+Siliconix/view-part/?ref=eda" x="117.0178" y="-116.2304" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" Si1308EDL-T1-GE3 N-channel MOSFET Transistor, 1.5 A, 30 V, 3-Pin SC-70 | Siliconix / Vishay SI1308EDL-T1-GE3 " x="117.0178" y="-116.2304" size="1.778" layer="27" display="off"/>
@@ -1617,154 +1680,154 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/SI1308EDL-T1-GE3/Vishay+Siliconix/view-part/?ref=snap" x="117.0178" y="-116.2304" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="92.456" y="-11.303" size="0.8128" layer="25" align="center"/>
 </element>
-<element name="R1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="34.163" y="16.2814" smashed="yes" rot="R90">
+<element name="R1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="34.163" y="16.2814" smashed="yes" rot="R90">
 <attribute name="NAME" x="33.528" y="15.6464" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="33.528" y="15.6464" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="117.983" y="78.5114" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="117.983" y="78.5114" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="36.068" y="15.6464" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="36.068" y="15.6464" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R1-PINH1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="105.6894" y="29.9466" smashed="yes" rot="R90">
+<element name="R1-PINH1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="105.6894" y="29.9466" smashed="yes" rot="R90">
 <attribute name="NAME" x="107.2642" y="28.4734" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="107.2388" y="28.4734" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="169.1894" y="106.1466" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="169.1894" y="106.1466" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="107.5944" y="29.3116" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="107.5944" y="29.3116" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="25.2984" y="72.6948" smashed="yes" rot="R90">
+<element name="R10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="25.2984" y="72.6948" smashed="yes" rot="R90">
 <attribute name="NAME" x="24.5364" y="71.9328" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="24.5618" y="71.9582" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="109.1184" y="129.8448" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="109.1184" y="129.8448" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="27.2034" y="72.0598" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="27.2034" y="72.0598" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R1_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="200" x="137.795" y="32.7914" smashed="yes">
+<element name="R1_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="200" x="137.795" y="32.7914" smashed="yes">
 <attribute name="NAME" x="136.017" y="33.528" size="0.8128" layer="25"/>
 <attribute name="NAME" x="136.017" y="33.5534" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="184.785" y="-45.9486" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="184.785" y="-45.9486" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="137.16" y="30.8864" size="1.27" layer="27"/>
+<attribute name="VALUE" x="137.16" y="30.8864" size="1.27" layer="27"/>
 </element>
-<element name="R1_PINH" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="169.4942" y="-20.1168" smashed="yes" rot="R90">
+<element name="R1_PINH" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="169.4942" y="-20.1168" smashed="yes" rot="R90">
 <attribute name="NAME" x="171.1198" y="-17.78" size="0.6096" layer="25" rot="R180"/>
 <attribute name="NAME" x="171.1198" y="-17.78" size="0.6096" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="238.0742" y="62.4332" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="238.0742" y="62.4332" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="171.3992" y="-20.7518" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="171.3992" y="-20.7518" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R1_PWRUSB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="100K" x="142.2908" y="17.4498" smashed="yes" rot="R90">
+<element name="R1_PWRUSB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="100K" x="142.2908" y="17.4498" smashed="yes" rot="R90">
 <attribute name="NAME" x="148.5138" y="20.066" size="0.8128" layer="25" rot="R180"/>
 <attribute name="NAME" x="148.5138" y="20.066" size="0.8128" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="205.7908" y="41.5798" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="205.7908" y="41.5798" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="144.1958" y="16.8148" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="144.1958" y="16.8148" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="2.2" x="93.9546" y="-16.6624" smashed="yes">
+<element name="R2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="2.2" x="93.9546" y="-16.6624" smashed="yes">
 <attribute name="NAME" x="93.3196" y="-16.0274" size="0.8128" layer="25"/>
 <attribute name="NAME" x="93.3196" y="-16.0274" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="115.5446" y="-105.5624" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="115.5446" y="-105.5624" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="93.3196" y="-18.5674" size="1.27" layer="27"/>
+<attribute name="VALUE" x="93.3196" y="-18.5674" size="1.27" layer="27"/>
 </element>
-<element name="R2-PINH1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="101.3206" y="33.9852" smashed="yes">
+<element name="R2-PINH1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="101.3206" y="33.9852" smashed="yes">
 <attribute name="NAME" x="99.2124" y="32.4358" size="0.8128" layer="25"/>
 <attribute name="NAME" x="99.1616" y="32.4358" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="187.6806" y="-29.5148" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="187.6806" y="-29.5148" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="100.6856" y="32.0802" size="1.27" layer="27"/>
+<attribute name="VALUE" x="100.6856" y="32.0802" size="1.27" layer="27"/>
 </element>
-<element name="R2-USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="5k1" x="168.2242" y="25.3492" smashed="yes">
+<element name="R2-USB" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="5k1" x="168.2242" y="25.3492" smashed="yes">
 <attribute name="NAME" x="167.5892" y="25.9842" size="0.8128" layer="25"/>
 <attribute name="NAME" x="167.5892" y="25.9842" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="232.9942" y="-53.3908" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="232.9942" y="-53.3908" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="167.5892" y="23.4442" size="1.27" layer="27"/>
+<attribute name="VALUE" x="167.5892" y="23.4442" size="1.27" layer="27"/>
 </element>
-<element name="R2-USB1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="5k1" x="168.1988" y="24.13" smashed="yes">
+<element name="R2-USB1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="5k1" x="168.1988" y="24.13" smashed="yes">
 <attribute name="NAME" x="167.4368" y="22.6314" size="0.8128" layer="25"/>
 <attribute name="NAME" x="167.4368" y="22.6314" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="260.9088" y="-44.45" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="260.9088" y="-44.45" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="167.5638" y="22.225" size="1.27" layer="27"/>
+<attribute name="VALUE" x="167.5638" y="22.225" size="1.27" layer="27"/>
 </element>
-<element name="R2_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="2K" x="146.1516" y="27.178" smashed="yes" rot="R90">
+<element name="R2_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="2K" x="146.1516" y="27.178" smashed="yes" rot="R90">
 <attribute name="NAME" x="145.161" y="25.2476" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="145.161" y="25.2476" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="224.8916" y="83.058" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="224.8916" y="83.058" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="148.0566" y="26.543" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="148.0566" y="26.543" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R2_PINH" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="170.7134" y="-20.1422" smashed="yes" rot="R90">
+<element name="R2_PINH" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="170.7134" y="-20.1422" smashed="yes" rot="R90">
 <attribute name="NAME" x="172.0596" y="-22.098" size="0.6096" layer="25" rot="R90"/>
 <attribute name="NAME" x="172.0342" y="-22.098" size="0.6096" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="244.3734" y="0.1778" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="244.3734" y="0.1778" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="172.6184" y="-20.7772" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="172.6184" y="-20.7772" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="0.47" x="96.4184" y="-18.6944" smashed="yes" rot="R90">
+<element name="R3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="0.47" x="96.4184" y="-18.6944" smashed="yes" rot="R90">
 <attribute name="NAME" x="97.9678" y="-19.2532" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="97.9678" y="-19.2532" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="180.2384" y="33.3756" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="180.2384" y="33.3756" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="98.3234" y="-19.3294" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="98.3234" y="-19.3294" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="99.2378" y="-14.097" smashed="yes" rot="R180">
+<element name="R4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="99.2378" y="-14.097" smashed="yes" rot="R180">
 <attribute name="NAME" x="99.8728" y="-14.732" size="0.8128" layer="25" rot="R180"/>
 <attribute name="NAME" x="99.8728" y="-14.732" size="0.8128" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="31.9278" y="69.723" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="31.9278" y="69.723" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="99.8728" y="-12.192" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="99.8728" y="-12.192" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="51.3588" y="16.129" smashed="yes" rot="R90">
+<element name="R5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="51.3588" y="16.129" smashed="yes" rot="R90">
 <attribute name="NAME" x="50.7238" y="15.494" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="50.7238" y="15.494" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="135.1788" y="88.519" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="135.1788" y="88.519" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="53.2638" y="15.494" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="53.2638" y="15.494" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="58.5978" y="-7.7216" smashed="yes" rot="R90">
+<element name="R6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="58.5978" y="-7.7216" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.2742" y="-8.3058" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="60.2742" y="-8.3058" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="142.4178" y="69.7484" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="142.4178" y="69.7484" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="60.5028" y="-8.3566" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="60.5028" y="-8.3566" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="56.5404" y="-7.7724" smashed="yes" rot="R90">
+<element name="R7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="56.5404" y="-7.7724" smashed="yes" rot="R90">
 <attribute name="NAME" x="55.9054" y="-8.4074" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="55.9054" y="-8.4074" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="140.3604" y="74.7776" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="140.3604" y="74.7776" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="58.4454" y="-8.4074" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="58.4454" y="-8.4074" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="51.2064" y="-7.6708" smashed="yes" rot="R90">
+<element name="R8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="51.2064" y="-7.6708" smashed="yes" rot="R90">
 <attribute name="NAME" x="50.5714" y="-8.3058" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="50.5714" y="-8.3058" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="135.0264" y="79.9592" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="135.0264" y="79.9592" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="53.1114" y="-8.3058" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="53.1114" y="-8.3058" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="98.8822" y="0.3048" smashed="yes" rot="R90">
+<element name="R9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="98.8822" y="0.3048" smashed="yes" rot="R90">
 <attribute name="NAME" x="98.2472" y="-0.3302" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="98.2472" y="-0.3302" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="182.7022" y="93.0148" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="182.7022" y="93.0148" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="100.7872" y="-0.3302" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="100.7872" y="-0.3302" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="RESET_BUTTON" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="MYBUTTON" value="BUTTON_CUSYOMV1" x="39.0128" y="80.5488" smashed="yes" rot="R180">
+<element name="RESET_BUTTON" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="MYBUTTON" package3d_urn="urn:adsk.eagle:package:47662741/1" value="BUTTON_CUSYOMV1BUTTON" x="39.0128" y="80.5488" smashed="yes" rot="R180">
 <attribute name="NAME" x="43.5848" y="78.4914" size="0.8128" layer="25" rot="R180"/>
 </element>
-<element name="R_BOOT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="75.6666" y="80.645" smashed="yes" rot="R90">
+<element name="R_BOOT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="75.6666" y="80.645" smashed="yes" rot="R90">
 <attribute name="NAME" x="75.0316" y="80.01" size="0.8128" layer="25" rot="R180"/>
 <attribute name="NAME" x="75.0316" y="80.01" size="0.8128" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="149.3266" y="109.855" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="149.3266" y="109.855" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="77.5716" y="80.01" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="77.5716" y="80.01" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R_CAPACITOR" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="15" x="98.8568" y="17.3736" smashed="yes">
+<element name="R_CAPACITOR" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="15" x="98.8568" y="17.3736" smashed="yes">
 <attribute name="NAME" x="97.6884" y="15.748" size="0.8128" layer="25"/>
 <attribute name="NAME" x="97.6884" y="15.748" size="0.8128" layer="25"/>
-<attribute name="SPICEMODEL" value="NONE" x="185.2168" y="-38.5064" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="185.2168" y="-38.5064" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="98.2218" y="15.4686" size="1.27" layer="27"/>
+<attribute name="VALUE" x="98.2218" y="15.4686" size="1.27" layer="27"/>
 </element>
-<element name="R_CHANGE" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="60.452" y="80.4418" smashed="yes" rot="R90">
+<element name="R_CHANGE" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="60.452" y="80.4418" smashed="yes" rot="R90">
 <attribute name="NAME" x="59.7154" y="80.6196" size="0.8128" layer="25" rot="R180"/>
 <attribute name="NAME" x="59.7154" y="80.645" size="0.8128" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="123.952" y="116.0018" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="123.952" y="116.0018" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="62.357" y="79.8068" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="62.357" y="79.8068" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R_CL1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="100.1776" y="0.3048" smashed="yes" rot="R90">
+<element name="R_CL1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="100.1776" y="0.3048" smashed="yes" rot="R90">
 <attribute name="NAME" x="101.8032" y="-0.5842" size="0.8128" layer="25" rot="R90"/>
 <attribute name="NAME" x="101.8032" y="-0.5842" size="0.8128" layer="25" rot="R90"/>
-<attribute name="SPICEMODEL" value="NONE" x="178.9176" y="72.6948" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="178.9176" y="72.6948" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="102.0826" y="-0.3302" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="102.0826" y="-0.3302" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R_RESET" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="35.6616" y="80.4164" smashed="yes" rot="R90">
+<element name="R_RESET" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" package3d_urn="urn:adsk.eagle:package:47662483/1" value="10K" x="35.6616" y="80.4164" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.052" y="80.645" size="0.8128" layer="25" rot="R180"/>
 <attribute name="NAME" x="35.052" y="80.645" size="0.8128" layer="25" rot="R180"/>
-<attribute name="SPICEMODEL" value="NONE" x="99.1616" y="146.4564" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="99.1616" y="146.4564" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="37.5666" y="79.7814" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="37.5666" y="79.7814" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="SENSOR2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_BME680_PSON80P300X300X100-8N" value="BME688" x="169.0116" y="-14.1986" smashed="yes">
+<element uuid="2882400001" name="SENSOR2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="ESP32_WROVER_BME680_PSON80P300X300X100-8N" package3d_urn="urn:adsk.eagle:package:47662498/1" override_locally_modified="yes" value="BME688" x="169.0116" y="-14.1986" smashed="yes">
 <attribute name="AVAILABILITY" value="Unavailable" x="238.8616" y="-63.7286" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" Integrated Environmental Unit " x="238.8616" y="-63.7286" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Bosch Sensortec" x="238.8616" y="-63.7286" size="1.778" layer="27" display="off"/>
@@ -1772,115 +1835,99 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="NAME" x="166.569309375" y="-12.2047" size="0.8128" layer="25" ratio="11"/>
 <attribute name="PACKAGE" value="LGA-8 Bosch Tools" x="238.8616" y="-63.7286" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="None" x="238.8616" y="-63.7286" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="167.084159375" y="-16.958659375" size="0.81416875" layer="27" ratio="11"/>
 </element>
-<element name="SJ1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SJ" value="" x="93.8324" y="-18.5928" smashed="yes">
+<element uuid="2882400054" name="SJ1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SJ" package3d_urn="urn:adsk.eagle:package:47662480/1" value="" x="93.8324" y="-18.5928" smashed="yes">
 <attribute name="NAME" x="92.0798" y="-20.6502" size="0.8128" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="3" x="134.4724" y="-112.5728" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="94.2325" y="-18.5928" size="0.02" layer="27"/>
 </element>
-<element name="TP1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="27.051" y="43.2308" smashed="yes">
+<element name="TP1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="27.051" y="43.2308" smashed="yes">
+<attribute name="3DNAME" value="TX" x="26.521" y="41.4208" size="0.6096" layer="25"/>
 <attribute name="NAME" x="26.051" y="44.2808" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="104.521" y="-45.6692" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="27.051" y="40.6908" size="1" layer="37"/>
 <attribute name="VALUE" x="26.289" y="42.2148" size="0.0254" layer="27"/>
 </element>
-<element name="TP10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="132.715" y="1.9812" smashed="yes">
+<element name="TP10" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="132.715" y="1.9812" smashed="yes">
+<attribute name="3DNAME" value="EPD_CS" x="130.975" y="0.2912" size="0.6096" layer="25"/>
 <attribute name="NAME" x="131.715" y="3.0312" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="160.655" y="-86.9188" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="132.715" y="-0.5588" size="1" layer="37"/>
 <attribute name="VALUE" x="131.953" y="0.9652" size="0.0254" layer="27"/>
 </element>
-<element name="TP11" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="136.8044" y="1.8288" smashed="yes">
+<element name="TP11" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="136.8044" y="1.8288" smashed="yes">
+<attribute name="3DNAME" value="EPD_DC" x="135.3244" y="0.1588" size="0.6096" layer="25"/>
 <attribute name="NAME" x="135.8044" y="2.8788" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="209.1944" y="-87.0712" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="136.8044" y="-0.7112" size="1" layer="37"/>
 <attribute name="VALUE" x="136.0424" y="0.8128" size="0.0254" layer="27"/>
 </element>
-<element name="TP12" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="128.27" y="-3.5814" smashed="yes">
+<element name="TP12" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="128.27" y="-3.5814" smashed="yes">
+<attribute name="3DNAME" value="EPD_RST" x="126.38" y="-5.4514" size="0.6096" layer="25"/>
 <attribute name="NAME" x="127.27" y="-2.5314" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="162.56" y="-92.4814" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="128.27" y="-6.1214" size="1" layer="37"/>
 <attribute name="VALUE" x="127.508" y="-4.5974" size="0.0254" layer="27"/>
 </element>
-<element name="TP13" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="132.7912" y="-3.4544" smashed="yes">
+<element name="TP13" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="132.7912" y="-3.4544" smashed="yes">
+<attribute name="3DNAME" value="EPD_3V3_C" x="130.9412" y="-5.9744" size="0.6096" layer="25"/>
 <attribute name="NAME" x="131.7912" y="-2.4044" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="173.4312" y="-92.3544" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="132.7912" y="-5.9944" size="1" layer="37"/>
 <attribute name="VALUE" x="132.0292" y="-4.4704" size="0.0254" layer="27"/>
 </element>
-<element name="TP14" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="174.9298" y="10.8966" smashed="yes">
+<element name="TP14" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="174.9298" y="10.8966" smashed="yes">
+<attribute name="3DNAME" value="VBUS" x="174.0098" y="9.0166" size="0.6096" layer="25"/>
 <attribute name="NAME" x="173.9298" y="11.9466" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="221.9198" y="-78.0034" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="174.9298" y="8.3566" size="1" layer="37"/>
 <attribute name="VALUE" x="174.1678" y="9.8806" size="0.0254" layer="27"/>
 </element>
-<element name="TP15" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="35.7378" y="43.2562" smashed="yes">
+<element name="TP15" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="35.7378" y="43.2562" smashed="yes">
+<attribute name="3DNAME" value="INT_RTC" x="34.3678" y="41.4562" size="0.6096" layer="25"/>
 <attribute name="NAME" x="34.7378" y="44.3062" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="89.0778" y="-45.6438" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="35.7378" y="40.7162" size="1" layer="37"/>
 <attribute name="VALUE" x="34.9758" y="42.2402" size="0.0254" layer="27"/>
 </element>
-<element name="TP16" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="28.7528" y="10.1346" smashed="yes">
+<element name="TP16" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="28.7528" y="10.1346" smashed="yes">
+<attribute name="3DNAME" value="3V3" x="27.9628" y="8.1146" size="0.6096" layer="25"/>
 <attribute name="NAME" x="27.7528" y="11.1846" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="88.4428" y="-78.7654" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="28.7528" y="7.5946" size="1" layer="37"/>
 <attribute name="VALUE" x="27.9908" y="9.1186" size="0.0254" layer="27"/>
 </element>
-<element name="TP17" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="137.2362" y="-3.429" smashed="yes">
+<element name="TP17" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="137.2362" y="-3.429" smashed="yes">
+<attribute name="3DNAME" value="EPD_3V3" x="135.5262" y="-5.059" size="0.6096" layer="25"/>
 <attribute name="NAME" x="136.2362" y="-2.379" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="203.2762" y="-92.329" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="137.2362" y="-5.969" size="1" layer="37"/>
 <attribute name="VALUE" x="136.4742" y="-4.445" size="0.0254" layer="27"/>
 </element>
-<element name="TP2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="31.75" y="43.3324" smashed="yes">
+<element name="TP2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="31.75" y="43.3324" smashed="yes">
+<attribute name="3DNAME" value="RX" x="31.21" y="41.5124" size="0.6096" layer="25"/>
 <attribute name="NAME" x="30.75" y="44.3824" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="114.3" y="-45.5676" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="31.75" y="40.7924" size="1" layer="37"/>
 <attribute name="VALUE" x="30.988" y="42.3164" size="0.0254" layer="27"/>
 </element>
-<element name="TP3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="170.4848" y="10.9728" smashed="yes">
+<element name="TP3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="170.4848" y="10.9728" smashed="yes">
+<attribute name="3DNAME" value="VBAT" x="169.6548" y="9.3128" size="0.6096" layer="25"/>
 <attribute name="NAME" x="169.4848" y="12.0228" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="258.1148" y="-77.9272" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="170.4848" y="8.4328" size="1" layer="37"/>
 <attribute name="VALUE" x="169.7228" y="9.9568" size="0.0254" layer="27"/>
 </element>
-<element name="TP4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="170.3324" y="5.4102" smashed="yes">
+<element name="TP4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="170.3324" y="5.4102" smashed="yes">
+<attribute name="3DNAME" value="GND" x="169.5824" y="3.7002" size="0.6096" layer="25"/>
 <attribute name="NAME" x="169.3324" y="6.4602" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="263.0424" y="-83.4898" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="170.3324" y="2.8702" size="1" layer="37"/>
 <attribute name="VALUE" x="169.5704" y="4.3942" size="0.0254" layer="27"/>
 </element>
-<element name="TP5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="174.9044" y="5.5118" smashed="yes">
+<element name="TP5" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="174.9044" y="5.5118" smashed="yes">
+<attribute name="3DNAME" value="GND" x="174.0544" y="3.7518" size="0.6096" layer="25"/>
 <attribute name="NAME" x="173.9044" y="6.5618" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="191.4144" y="-88.4682" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="174.9044" y="2.9718" size="1" layer="37"/>
 <attribute name="VALUE" x="174.1424" y="4.4958" size="0.0254" layer="27"/>
 </element>
-<element name="TP6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="35.56" y="48.1838" smashed="yes">
+<element name="TP6" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="35.56" y="48.1838" smashed="yes">
+<attribute name="3DNAME" value="MISO" x="34.53" y="46.4138" size="0.6096" layer="25"/>
 <attribute name="NAME" x="34.56" y="49.2338" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="57.15" y="-45.7962" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="35.56" y="45.6438" size="1" layer="37"/>
 <attribute name="VALUE" x="34.798" y="47.1678" size="0.0254" layer="27"/>
 </element>
-<element name="TP7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="31.4706" y="48.2346" smashed="yes">
+<element name="TP7" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="31.4706" y="48.2346" smashed="yes">
+<attribute name="3DNAME" value="MOSI" x="30.5506" y="46.3046" size="0.6096" layer="25"/>
 <attribute name="NAME" x="30.4706" y="49.2846" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="58.1406" y="-45.7454" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="31.4706" y="45.6946" size="1" layer="37"/>
 <attribute name="VALUE" x="30.7086" y="47.2186" size="0.0254" layer="27"/>
 </element>
-<element name="TP8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="27.1272" y="48.1838" smashed="yes">
+<element name="TP8" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="27.1272" y="48.1838" smashed="yes">
+<attribute name="3D_NAME" value="SCK" x="26.2272" y="46.2738" size="0.6096" layer="25"/>
 <attribute name="NAME" x="26.1272" y="49.2338" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="58.8772" y="-45.7962" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="27.1272" y="45.6438" size="1" layer="37"/>
 <attribute name="VALUE" x="26.3652" y="47.1678" size="0.0254" layer="27"/>
 </element>
-<element name="TP9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" value="TPTP20R" x="128.3716" y="1.905" smashed="yes">
+<element name="TP9" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="TP20R" package3d_urn="urn:adsk.eagle:package:47662810/1" value="TPTP20R" x="128.3716" y="1.905" smashed="yes">
+<attribute name="3DNAME" value="EPD_BUSY" x="125.9516" y="0.215" size="0.6096" layer="25"/>
 <attribute name="NAME" x="127.3716" y="2.955" size="0.8128" layer="25"/>
-<attribute name="POPULARITY" value="2" x="165.2016" y="-92.075" size="1.778" layer="27" display="off"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="128.3716" y="-0.635" size="1" layer="37"/>
 <attribute name="VALUE" x="127.6096" y="0.889" size="0.0254" layer="27"/>
 </element>
-<element name="U1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SON127P600X800X80-9N" value="W25Q512JVEIQ" x="54.3052" y="25.0952" smashed="yes">
+<element uuid="2882400009" name="U1" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SON127P600X800X80-9N" package3d_urn="urn:adsk.eagle:package:47662495/1" override_locally_modified="yes" value="W25Q512JVEIQ" x="54.3052" y="25.0952" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="103.8352" y="-10.4648" size="1.778" layer="27" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda" x="103.8352" y="-10.4648" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" FLASH - NOR Memory IC 512Mb (64M x 8) SPI - Quad I/O 133 MHz 8-WSON (8x6) " x="103.8352" y="-10.4648" size="1.778" layer="27" display="off"/>
@@ -1892,7 +1939,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=snap" x="103.8352" y="-10.4648" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="49.6902" y="21.6152" size="0.8128" layer="25" align="top-left"/>
 </element>
-<element name="U2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="XCVR_ESP32-C6-WROOM-1-N8" value="ESP32-C6-WROOM-1-N8" x="28.0416" y="28.956" smashed="yes" rot="R90">
+<element uuid="2882400029" name="U2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="XCVR_ESP32-C6-WROOM-1-N8" package3d_urn="urn:adsk.eagle:package:47662482/1" override_locally_modified="yes" value="ESP32-C6-WROOM-1-N8" x="28.0416" y="28.956" smashed="yes" rot="R90">
 <attribute name="AVAILABILITY" value="In Stock" x="43.2816" y="54.356" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif+Systems/view-part/?ref=eda" x="43.2816" y="54.356" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value=" Multiprotocol Modules ESP32-C6 module, Wi-Fi 6 in 2.4 GHz band, Bluetooth 5, Zigbee 3.0 and Thread. ESP34-WROOM Compatible - ENGINEERING SAMPLE " x="43.2816" y="54.356" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1904,7 +1951,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif+Systems/view-part/?ref=snap" x="43.2816" y="54.356" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="43.4052" y="19.956" size="0.8128" layer="25" rot="R90"/>
 </element>
-<element name="U3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOIC127P1032X265-16N" value="DS3231SN#" x="98.3996" y="25.6032" smashed="yes" rot="R270">
+<element uuid="2882400011" name="U3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SOIC127P1032X265-16N" package3d_urn="urn:adsk.eagle:package:47662489/1" override_locally_modified="yes" value="DS3231SN#" x="98.3996" y="25.6032" smashed="yes" rot="R270">
 <attribute name="AVAILABILITY" value="In Stock" x="60.2996" y="6.5532" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/DS3231SN%23/Analog+Devices/view-part/?ref=eda" x="60.2996" y="6.5532" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value=" Extremely Accurate I²C-Integrated RTC/TCXO/Crystal " x="60.2996" y="6.5532" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1917,7 +1964,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/DS3231SN%23/Analog+Devices/view-part/?ref=snap" x="60.2996" y="6.5532" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="92.33436875" y="31.465990625" size="0.8128" layer="25" rot="R270" align="top-left"/>
 </element>
-<element name="U4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SON50P200X200X80-9N" value="MAX17048G+T10" x="156.591" y="28.1686" smashed="yes">
+<element uuid="2882400005" name="U4" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw" package="SON50P200X200X80-9N" package3d_urn="urn:adsk.eagle:package:47662487/1" override_locally_modified="yes" value="MAX17048G+T10" x="156.591" y="28.1686" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="242.951" y="-21.3614" size="1.778" layer="27" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/MAX17048G+T10/Analog+Devices/view-part/?ref=eda" x="242.951" y="-21.3614" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" 3µA 1-Cell/2-Cell Fuel Gauge with ModelGauge " x="242.951" y="-21.3614" size="1.778" layer="27" display="off"/>
@@ -1928,6 +1975,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="PRICE" value="None" x="242.951" y="-21.3614" size="1.778" layer="27" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=329239&amp;manufacturer=Analog Devices&amp;part_name=MAX17048G+T10&amp;search_term=None" x="242.951" y="-21.3614" size="1.778" layer="27" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/MAX17048G+T10/Analog+Devices/view-part/?ref=snap" x="242.951" y="-21.3614" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="154.781" y="26.7866" size="1.27" layer="27" align="top-left"/>
 </element>
 </elements>
 <signals>
