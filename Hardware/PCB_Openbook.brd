@@ -105,6 +105,9 @@
 <wire x1="21.4" y1="19.947859375" x2="15" y2="19.947859375" width="0.1524" layer="20"/>
 <wire x1="107.297784375" y1="-28.2" x2="107.297784375" y2="-18.387640625" width="0.1524" layer="20"/>
 <wire x1="107.297784375" y1="-18.387640625" x2="107.3910125" y2="-18.387640625" width="0.1524" layer="20"/>
+<rectangle x1="100.06" y1="58.96" x2="105.51" y2="81.07" layer="25"/>
+<text x="98.33" y="63.88" size="0.8128" layer="25" rot="R270">Serial No:</text>
+<text x="18.33" y="-25.84" size="1.27" layer="25">OpenBook v1.1</text>
 </plain>
 <libraries>
 <library name="DeskAssistant v19 v1" urn="urn:adsk.wipprod:fs.file:vf.DxLFQidkTo2tAbC_qkWkhw">
