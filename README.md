@@ -81,7 +81,7 @@ TP-urile le-am proiectat singur, de aceea nu au o datasheet si un link catre sit
 | IC4                | XC6220A331MR-G                            | [Check Price](https://componentsearchengine.com/part-view/XC6220A331MR-G/Torex) | [DataSheet](https://componentsearchengine.com/part-view/XC6220A331MR-G/Torex) |
 | J1                 | FH34SRJ-24S-0.5SH_99_                     | [Check Price](https://componentsearchengine.com/part-view/XC6220A331MR-G/Torex) | [DataSheet](https://componentsearchengine.com/part-view/XC6220A331MR-G/Torex) |
 | J2                 | SAMACSYS_PARTS_USB4110-GF-A               | [Check Price](https://componentsearchengine.com/part-view/USB4110-GF-A/GCT%20(GLOBAL%20CONNECTOR%20TECHNOLOGY) | [DataSheet](https://componentsearchengine.com/part-view/USB4110-GF-A/GCT%20(GLOBAL%20CONNECTOR%20TECHNOLOGY) |
-| J3                 | QWIIC_CONNECTORJS-1MM                     | #N/A                                                                         | #N/A                                                                      |
+| J3                 | QWIIC_CONNECTORJS-1MM                     | [Check Price](https://www.snapeda.com/parts/PRT-14417/SparkFun%20Electronics/view-part/?ref=search&t=qwiic%20connectpr)                                                                         | [Datasheet](https://www.snapeda.com/parts/PRT-14417/SparkFun%20Electronics/view-part/?ref=search&t=qwiic%20connectpr)                                                                        |
 | J4                 | 112A-TAAR-R03_ATTEND                      | [Check Price](https://store.comet.srl.ro/Catalogue/Product/43497/)           | [DataSheet](https://store.comet.srl.ro/Catalogue/Product/43497/)          |
 | L1                 | 744043680IND_4828-WE-TPC_WRE              | [Check Price](https://eu.mouser.com/ProductDetail/Wurth-Elektronik/744043680?qs=PGXP4M47uW6VkZq%252BkzjrHA%3D%3D) | [DataSheet](https://eu.mouser.com/ProductDetail/Wurth-Elektronik/744043680?qs=PGXP4M47uW6VkZq%252BkzjrHA%3D%3D) |
 | PFMF.050.1         | ESP32C6_VARISTORCN1812                    | [Check Price](https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B72520T0350K062?qs=dEfas%2FXlABIszF52uu7vrg%3D%3D) | [DataSheet](https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B72520T0350K062?qs=dEfas%2FXlABIszF52uu7vrg%3D%3D) |
@@ -201,8 +201,9 @@ Conector standard cu 4 pini (VCC, GND, SDA, SCL) pentru atașarea rapidă a senz
 ## Note
 - am adaugat la partea de PCB 2D niste masuratori in plus pentru claritate
 - am pozitionat TP-urile in cel mai apropiat loc de componentele conectate
-- am mai adaugat pe placa o zona unde poate fi scris numarul de serie al placii si versiunea ei(probabil va deveni Openbook v1.2 dupa feedback)
+- am mai adaugat pe placa o zona unde poate fi scris numarul de serie al placii si versiunea ei(probabil va deveni Openbook v1.2 dupa feedback - UPDATE: chiar a devenit)
 - pentru baterie, am folosit un paralelipiped cu dimensiunile maxime din datasheet
+- la partea de PCB, am aprobat 2 erori de gauri de la o componenta si o eroare de Airwire la componenta J4, are 9 grounduri puse intr-un grid 3x3 si cel din mijloc nu e accesibil
 
 ## Concluzii
 A fost un proiect destul de solicitant, dar cu multa munca am reusit sa il duc pana la capat. Am luat in considerare majoritatea indicatiilor si sunt deschis sa fac imbunatatiri pe urma feedbackului.
